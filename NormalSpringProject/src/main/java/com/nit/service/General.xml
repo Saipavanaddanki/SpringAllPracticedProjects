@@ -1,0 +1,23 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+        
+ <beans>
+	<bean id="emp1" class="com.nit.service.Employee">
+		<property name="employeeId" value="123"></property>
+		<property name="employeeName" value="SaiPavan"></property>
+	</bean>
+	<bean id="emp2" class="com.nit.service.Employee">
+		<property name="employeeId" value="456"></property>
+		<property name="employeeName" value="kumar123"></property>
+	</bean>
+	<bean id="dept" class="com.nit.service.Department" autowire="byName">
+		<constructor-arg value="901" index="0"></constructor-arg>
+		<constructor-arg value="Electrical" index="1"></constructor-arg>
+	</bean>
+	<bean id="dept2" class="com.nit.service.Department">
+		<property name="emp1" ref="emp2"></property>
+		<constructor-arg value="902"></constructor-arg>
+		<constructor-arg value="Commerce"></constructor-arg>
+		</bean>
+	
+ </beans>

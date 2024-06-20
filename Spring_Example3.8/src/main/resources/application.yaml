@@ -1,0 +1,27 @@
+spring:
+     jpa:
+       show-sql: true
+       hibernate:
+            ddl-auto: none
+     datasource:
+             url: jdbc:oracle:thin:@localhost:1521:Ora19
+             username: system
+             password: system
+server:
+    port: 9999
+    servlet:
+          context-path: /userList		
+ 
+logging:
+     level: 
+         org:
+             springframework: 
+                                          web: debug
+               
+                             
+      
+            
+        
+    
+    
+             

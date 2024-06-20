@@ -1,0 +1,14 @@
+server:
+  port: 9999
+  servlet:
+    context-path: /register
+spring:
+ 
+  datasource:
+    password: system
+    url: jdbc:oracle:thin:@localhost:1521:Ora19
+    username: system
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true

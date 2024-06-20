@@ -1,0 +1,10 @@
+spring:
+   jpa:
+      hibernate:
+          ddl-auto: create-drop
+      show-sql: true
+
+   datasource:
+          url: jdbc:oracle:thin:@localhost:1521:Ora19
+          username: system
+          password: system

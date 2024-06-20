@@ -1,0 +1,16 @@
+
+server:
+  port: 9999
+  servlet:
+    context-path: /grossary
+        
+spring:
+     jpa:
+       show-sql: true
+       hibernate:
+          ddl-auto: create-drop
+     datasource:
+          url: jdbc:oracle:thin:@localhost:1521:Ora19
+          username: system
+          password: system
+             
