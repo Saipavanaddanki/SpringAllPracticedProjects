@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @FeignClient("PaymentService")
 public interface PaymentApiFeignClient {
-
+     
 	@GetMapping(path="/processpayment")
 	public ResponseEntity<String> gettingPaymentStatus(@RequestBody PaymentDto payment ,@RequestParam String bank); 
 }
+
